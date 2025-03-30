@@ -3,13 +3,13 @@ name: exam-test-app-sql
 on:
  push:
   branches:
-   main:
+    - main
 
 jobs:
  app-db:
   runs-on: ubuntu:latest
   steps:
-    - name: Checkout source code
+    - name: Checkout source code okay
       uses: actions/checkout@v3
 
     - name: Set up docker compose

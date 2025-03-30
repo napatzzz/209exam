@@ -19,8 +19,8 @@ jobs:
         sleep 20
 
     - name: Test API
-      run: docker compose exec -it app_server curl http://localhost:5000/api/users
+      run: docker compose exec -it app curl http://localhost:5000/api/users
 
     - name: Shoutdown docker compose
       if: always()
-      run: docer compose down -v
+      run: docer compose down

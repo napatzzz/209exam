@@ -23,4 +23,4 @@ jobs:
 
     - name: Shoutdown docker compose
       if: always()
-      run: docer compose down
+      run: docker compose down
